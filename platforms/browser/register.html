@@ -80,12 +80,12 @@
                     </a> 
                     <div class="submenu">
                         <a class="submenu-item" href="features-typography.html">    <i class="fa fa-angle-right"></i><em>   Typography    </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="profile-summary.html">        <i class="fa fa-angle-right"></i><em>   jQuery    </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="features-jquery.html">        <i class="fa fa-angle-right"></i><em>   jQuery    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-others.html">        <i class="fa fa-angle-right"></i><em>   Others    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-sliders.html">       <i class="fa fa-angle-right"></i><em>   Sliders    </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="features-interactive.html">   <i class="fa fa-angle-right"></i><em>   Interactive    </em><i class="fa fa-circle"></i></a>                    
                     </div>
-                </div>                  
+                </div>                   
                 <div class="has-submenu">
                     <a class="menu-item show-submenu" href="#">
                         <i class="fa fa-navicon"></i>
@@ -157,8 +157,8 @@
                         <a class="submenu-item" href="pageapp-tasklist.html"><i class="fa fa-angle-right"></i><em>   Tasklists       </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="pageapp-checklist.html"><i class="fa fa-angle-right"></i><em>   Checklists       </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="pageapp-reminders.html"><i class="fa fa-angle-right"></i><em>   Reminders       </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item" href="pageapp-signup.html"><i class="fa fa-angle-right"></i><em>   Signup Screen       </em><i class="fa fa-circle"></i></a>
-                        <a class="submenu-item submenu-item-active" href="pageapp-login.html"><i class="fa fa-angle-right"></i><em>   Login Screen       </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item submenu-item-active" href="pageapp-signup.html"><i class="fa fa-angle-right"></i><em>   Signup Screen       </em><i class="fa fa-circle"></i></a>
+                        <a class="submenu-item" href="pageapp-login.html"><i class="fa fa-angle-right"></i><em>   Login Screen       </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="pageapp-coverpage.html"><i class="fa fa-angle-right"></i><em>   Coverpage      </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="pageapp-timeline.html"><i class="fa fa-angle-right"></i><em>   Timeline Left      </em><i class="fa fa-circle"></i></a>
                         <a class="submenu-item" href="pageapp-timeline2.html"><i class="fa fa-angle-right"></i><em>   Timeline Center      </em><i class="fa fa-circle"></i></a>
@@ -326,31 +326,35 @@
             <div class="header-clear"></div>
             <!--Page content goes here, fixed elements go above the all elements class-->  
 
-            <div class="pageapp-login bg-bk cover-screen">    
-                <div class="pageapp-login-content cover-center logo-img">
-					<img src="images/logo.png" alt="img">
-                    <div class="unboxed-layout info-bottom">
-                        
-                        <div class="blog-sidebar-search">
-                            <i class="fa fa-search"></i>
-                            <input type="text" value="Search" onfocus="if (this.value=='Search') this.value = ''" onblur="if (this.value=='') this.value = 'Search'">
+            <div class="pageapp-signup bg-bk cover-screen">    
+                <div class="pageapp-signup-content cover-center">
+                    <div class="unboxed-layout">
+                        <a class="pageapp-signup-logo" href="#"></a>
+                        <div class="pageapp-signup-field">
+                            <i class="fa fa-user"></i>
+                            <input onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'" type="text" value="Username">
+                        </div>                    
+                        <div class="pageapp-signup-field">
+                            <i class="fa fa-envelope-o"></i>
+                            <input onfocus="if (this.value=='E-Mail') this.value = ''" onblur="if (this.value=='') this.value = 'E-Mail'" type="email" value="E-Mail">
+                        </div>                    
+                        <div class="pageapp-signup-field">
+                            <i class="fa fa-calendar-o"></i>
+                            <input class="set-today" type="date">
                         </div>
-                        <a href="#" class="button button-small button-grey button-fullscreen">Search</a>
-                        <!--<a href="#" class="pageapp-login-button button button-small button-green button-fullscreen">Login</a>-->
-                        
-                       
-                        <!--<a href="#" class="facebook-login facebook-color"><i class="fa fa-facebook"></i>Login with Facebook</a>
-                        <a href="#" class="twitter-login twitter-color no-bottom"><i class="fa fa-twitter"></i>Signin with Twitter</a>-->       
-						<div class="decoration info-search"></div>
-						<p>Do You need Any Help? <br>Call us at +91 9999 999 999</p>
-						
+                        <div class="pageapp-signup-field">
+                            <i class="fa fa-lock"></i>
+                            <input onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'" type="password" value="password">
+                        </div>
+                        <a href="#" class="pageapp-signup-button button button-small button-green button-fullscreen">Register</a>
+						<div class="decoration"></div>
+						<a href="index.html" class="">Login</a>
                     </div>
                 </div>
                 <!--<div class="overlay bg-black"></div>-->
-                <!--<a href="pageapp-login2.html" class="left-button"><i class="fa fa-square"></i>Boxed Version</a>
-                <a href="page-login.html" class="right-button">Page Version <i class="fa fa-star"></i></a>-->
+                <!--<a href="pageapp-signup2.html" class="left-button"><i class="fa fa-square"></i>Boxed Version</a>
+                <a href="page-signup.html" class="right-button">Page Version <i class="fa fa-star"></i></a>-->
             </div>
-						
                                 
             <!-- End of entire page content-->
         </div>
@@ -423,33 +427,3 @@
 </div>
     
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
